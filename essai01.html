@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essai Skeleton 01</title>
+    
+     <!-- on se met a disposition le framework skeleton  -->
+    <link href="skeleton.css" rel="stylesheet">
+   
+    <!-- et on prepare egalement un fchier pour ajoute nos propres regles -->
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <h2>Observations du système de grilles / colonnes de Skeleton :</h2>
+  <div class="container">
+
+    <h3>Ceci est une div de classe "container"</h3>
+
+    <p> Ce qui se trouve à l'intérieur sera contraint à une zone de largeur limitée à 1200 px qui restera centrée lorsque la fenêtre dépassera cette largeur. En dessous de cette largeur, le contenu restera fluide: il s'adaptera à la largeur de la fenêtre. </p>
+
+    <div class="row">
+
+      <h4> Ceci est une div de classe "row" </h4>
+
+      <p> Cette classe ne donne pas grand chose d'intéressant visuellement. Elle sert surtout à accueillir proprement des éleéments de classe "column".</p>
+
+      <div class="column">
+        <p> Ceci est une classe "column". Tant qu'on a pas précisé combien de largeur elle doit occuper, elle n'aura pas de comportement spécial.</p>
+
+      </div>
+
+      <div class="columns">
+        <p> Ceci est une classe "columns". Elle semble identique à celle de la classe "column".</p>
+
+      </div>
+
+      <div class="one column"> 
+        <p> Ceci est une classe "one column" et "one". Elle occupera une colonne sur les 12 qui sont disponibles. </p>
+      </div>
+
+      <div class="three columns">
+        <p> Ceci est une classe "three columns". Elle occupera 3 colonnes sur les 12 qui sont disponibles. </p>
+      </div>
+    
+    </div>
+
+    </div>
+
+  </div>
+
+
+  <h2>Exemple fourni par Skeleton: </h2>
+
+    <!-- .container is main centered wrapper -->
+<div class="container">
+
+    <!-- columns should be the immediate child of a .row -->
+    <div class="row">
+      <div class="one column">One</div>
+      <div class="eleven columns">Eleven</div>
+    </div>
+  
+    <!-- just use a number and class 'column' or 'columns' -->
+    <div class="row">
+      <div class="two columns">Two</div>
+      <div class="ten columns">Ten</div>
+    </div>
+  
+    <!-- there are a few shorthand columns widths as well -->
+    <div class="row">
+      <div class="one-third column">1/3</div>
+      <div class="two-thirds column">2/3</div>
+    </div>
+    <div class="row">
+      <div class="one-half column">1/2</div>
+      <div class="one-half column">1/2</div>
+    </div>
+  
+  </div>
+  
+  <!-- Note: columns can be nested, but it's not recommended since Skeleton's grid has %-based gutters, meaning a nested grid results in variable with gutters (which can end up being *really* small on certain browser/device sizes) -->
+</body>
+</html>
